@@ -1,6 +1,9 @@
 :root {
   --backColor : #121212;
-  --fontColor : #fff;
+  --fontWhite : #fff;
+  --fontBlack : #090909;
+  --primaryColor : #2474cd;
+
 }
 
 * {
@@ -12,7 +15,61 @@ body {
   display: flex;
   height: 100vh;
   justify-content: center;
-  align-items: center;
   background: var(--backColor);
-  color: var(--fontColor);
+  color: var(--fontWhite);
+}
+
+.container {
+  margin-top: 150px;
+  background: rgba(255, 255, 255, 0.5);
+  color: var(--fontBlack);
+  padding: 1em;
+  height: max-content;
+  border-radius: 6px;
+  font-family: montserrat;
+  min-width: 320px;
+}
+
+.kotak h3 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.form {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+/* reset and basic set btn and input */
+.form #keyword,
+.form .btn {
+  border: 2px solid transparent;
+  cursor: pointer;
+  user-select: none;
+}
+
+.form #keyword {
+  padding: 6px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.form #keyword:focus {
+  border: 2px solid var(--primaryColor);
+}
+
+.form .btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--primaryColor);
+  color: var(--fontWhite);
+  font-weight: bolder;
+  padding: 4px;
+}
+
+.list ul {
+  list-style: none;
 }
