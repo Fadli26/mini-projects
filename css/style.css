@@ -26,8 +26,8 @@ body {
 
 .container {
   margin-top: 150px;
-  background: rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
   color: var(--fontBlack);
   padding: 1em;
   height: max-content;
