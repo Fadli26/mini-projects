@@ -94,6 +94,10 @@ body {
   border-bottom: 2px solid var(--primaryColor);
 }
 
+.list ul li .check {
+  margin-right: 4px;
+}
+
 /* .list ul li:nth-child(odd) {
   background: var(--liEven);
 }
@@ -103,16 +107,16 @@ body {
 
 .list ul li span.close {
   background: var(--closeColor);
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--fontWhite);
   position: absolute;
   top: 0;
   right: 0;
-  padding: 2px;
+  padding: 4px;
   cursor: pointer;
 }
 
 .list ul li span.close:hover {
-  color: var(--fontWhite);
+  color: var(--fontBlack);
 }
 
 .list .clear {
