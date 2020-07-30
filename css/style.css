@@ -50,7 +50,8 @@ body {
 /* reset and basic set btn and input */
 .form #keyword,
 .form .btn,
-.list .clear {
+.list .clear,
+.list ul li label {
   cursor: pointer;
   user-select: none;
 }
