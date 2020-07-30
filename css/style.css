@@ -49,12 +49,12 @@ body {
 /* reset and basic set btn and input */
 .form #keyword,
 .form .btn {
-  border: 2px solid transparent;
   cursor: pointer;
   user-select: none;
 }
 
 .form #keyword {
+  border: 2px solid transparent;
   padding: 6px;
   box-sizing: border-box;
   width: 100%;
@@ -66,6 +66,7 @@ body {
 
 .form .btn {
   position: absolute;
+  border: none;
   top: 0;
   right: 0;
   bottom: 0;
@@ -73,6 +74,10 @@ body {
   color: var(--fontWhite);
   font-weight: bolder;
   padding: 4px;
+}
+
+.form .btn:hover {
+  box-shadow: inset 2px 2px 5px rgba(30, 30, 30, 0.3);
 }
 
 .list ul {
