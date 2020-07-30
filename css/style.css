@@ -3,6 +3,7 @@
   --fontWhite : #fff;
   --fontBlack : #090909;
   --primaryColor : #2474cd;
+  --dangerColor : #EDD400;
   --closeColor : #CC0000;
   --liOdd : #999;
   --liEven : #ddd;
@@ -48,7 +49,8 @@ body {
 
 /* reset and basic set btn and input */
 .form #keyword,
-.form .btn {
+.form .btn,
+.list .clear {
   cursor: pointer;
   user-select: none;
 }
@@ -110,4 +112,18 @@ body {
 
 .list ul li span.close:hover {
   color: var(--fontWhite);
+}
+
+.list .clear {
+  border: none;
+  border-radius: 6px;
+  background: var(--dangerColor);
+  padding: 0.5em 1em;
+  font-weight: bolder;
+  transition: 0.5s ease-in;
+}
+
+.list .clear:hover {
+  background: var(--fontWhite);
+  color: var(--dangerColor);
 }
