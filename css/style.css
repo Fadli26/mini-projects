@@ -18,18 +18,21 @@ body {
   height: 100vh;
   justify-content: center;
   background: var(--backColor);
+  background: url('../assets/img/msager_breathtaking_place.jpg');
+  background-size: cover;
   color: var(--fontWhite);
 }
 
 .container {
   margin-top: 150px;
   background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
   color: var(--fontBlack);
   padding: 1em;
   height: max-content;
   border-radius: 6px;
   font-family: montserrat;
-  min-width: 320px;
+  width: 320px;
 }
 
 .kotak h3 {
@@ -78,23 +81,23 @@ body {
 }
 
 .list ul li {
-  padding: 2px;
+  padding: 6px;
   position: relative;
+  border-bottom: 2px solid var(--primaryColor);
 }
 
-.list ul li:nth-child(odd) {
+/* .list ul li:nth-child(odd) {
   background: var(--liEven);
 }
 .list ul li:nth-child(even) {
   background: var(--liOdd);
-}
+} */
 
 .list ul li span.close {
   background: var(--closeColor);
   color: rgba(255, 255, 255, 0.5);
   position: absolute;
   top: 0;
-  bottom: 0;
   right: 0;
   padding: 2px;
   cursor: pointer;
