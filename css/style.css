@@ -3,7 +3,9 @@
   --fontWhite : #fff;
   --fontBlack : #090909;
   --primaryColor : #2474cd;
-
+  --closeColor : #CC0000;
+  --liOdd : #999;
+  --liEven : #ddd;
 }
 
 * {
@@ -72,4 +74,32 @@ body {
 
 .list ul {
   list-style: none;
+  margin-bottom: 50px;
+}
+
+.list ul li {
+  padding: 2px;
+  position: relative;
+}
+
+.list ul li:nth-child(odd) {
+  background: var(--liEven);
+}
+.list ul li:nth-child(even) {
+  background: var(--liOdd);
+}
+
+.list ul li span.close {
+  background: var(--closeColor);
+  color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  padding: 2px;
+  cursor: pointer;
+}
+
+.list ul li span.close:hover {
+  color: var(--fontWhite);
 }
