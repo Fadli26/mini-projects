@@ -1,12 +1,12 @@
 :root {
-  --backColor : #121212;
-  --fontWhite : #fff;
-  --fontBlack : #090909;
-  --primaryColor : #2474cd;
-  --dangerColor : #EDD400;
-  --closeColor : #CC0000;
-  --liOdd : #999;
-  --liEven : #ddd;
+  --backColor: #121212;
+  --fontWhite: #fff;
+  --fontBlack: #090909;
+  --primaryColor: #2474cd;
+  --dangerColor: #EDD400;
+  --closeColor: #CC0000;
+  --liOdd: #999;
+  --liEven: #ddd;
 }
 
 * {
@@ -131,4 +131,9 @@ body {
 .list .clear:hover {
   background: var(--fontWhite);
   color: var(--dangerColor);
+}
+
+.remove {
+  text-decoration: line-through red;
+  color: red;
 }

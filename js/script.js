@@ -27,7 +27,7 @@ function createElement(id) {
   currentId++;
 }
 
-container.addEventListener("click", function(e) {
+container.addEventListener("click", function (e) {
   if (e.target.className == "btn") {
     if (keyword.value == "") {
       alert("masukan keyword!");
@@ -40,12 +40,12 @@ container.addEventListener("click", function(e) {
   } else if (e.target.className == "check") {
     if (e.target.checked) {
       e.target.nextElementSibling.classList.add("remove");
-      e.target.nextElementSibling.style.textDecoration = "line-through red";
-      e.target.nextElementSibling.style.color = "red";
+      // e.target.nextElementSibling.style.textDecoration = "line-through red";
+      // e.target.nextElementSibling.style.color = "red";
     } else {
       e.target.nextElementSibling.classList.remove("remove");
-      e.target.nextElementSibling.style.textDecoration = "";
-      e.target.nextElementSibling.style.color = "";
+      // e.target.nextElementSibling.style.textDecoration = "";
+      // e.target.nextElementSibling.style.color = "";
     }
   } else if (e.target.className == "clear") {
     e.target.previousElementSibling.innerHTML = "";
